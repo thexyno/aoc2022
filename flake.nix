@@ -27,7 +27,7 @@
       devShell = forAllSystems (system:
         let pkgs = nixpkgsFor.${system}; in
         (pkgs.mkShell {
-          buildInputs = [ pkgs.cargo ];
+          buildInputs = [ pkgs.cargo pkgs.rustup ];
         }));
     };
 }

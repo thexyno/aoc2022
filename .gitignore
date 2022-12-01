@@ -1,1 +1,4 @@
-/target
+target
+input
+/.direnv
+.DS_Store
